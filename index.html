@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NURSERA | Club de Soins Infirmiers</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-red: #e63946; /* اللون الأحمر الطبي */
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--white);
+        }
+
+        /* Navigation */
+        .navbar {
+            border-bottom: 4px solid var(--primary-red);
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-red) !important;
+            font-size: 1.5rem;
+        }
+        .navbar-brand img {
+            height: 45px;
+            margin-right: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('https://images.unsplash.com/photo-1576091160550-2173dbc999ef?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            color: #2b2d42;
+            font-weight: 700;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: var(--primary-red);
+        }
+
+        /* Buttons */
+        .btn-main {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-main:hover {
+            background-color: #c12e3a;
+            color: white;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+        }
+
+        /* Sections */
+        .section-padding { padding: 80px 0; }
+        .title-line {
+            width: 60px;
+            height: 4px;
+            background: var(--primary-red);
+            margin: 20px auto;
+        }
+
+        .card-service {
+            border: 1px solid #eee;
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .card-service:hover {
+            border-color: var(--primary-red);
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #2b2d42;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpg" alt="Logo"> NURSERA
+            </a>
+            <div class="ms-auto">
+                <a href="#join" class="btn-main">S'abonner</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Bienvenue chez <span>NURSERA</span></h1>
+            <p class="lead mb-4">L'excellence au service de la santé et du futur infirmier.</p>
+            <a href="#about" class="btn-main">Découvrir plus</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding container text-center">
+        <h2 class="fw-bold">Notre Mission</h2>
+        <div class="title-line"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="text-muted fs-5">
+                    NURSERA est un club dédié aux passionnés des soins infirmiers. 
+                    Nous travaillons pour renforcer les compétences, partager les connaissances 
+                    et créer un réseau solide entre les étudiants et les professionnels.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nos Activités</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-service bg-white text-center">
+                        <h3 class="h5 mb-3" style="color:var(--primary-red)">Formation</h3>
+                        <p>Des ateliers pratiques pour maîtriser les gestes de premiers secours et les soins avancés.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-service bg-white text-center">
+                        <h3 class="h5 mb-3" style="color:var(--primary-red)">Événements</h3>
+                        <p>Organisation de journées de sensibilisation et de conférences médicales thématiques.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-service bg-white text-center">
+                        <h3 class="h5 mb-3" style="color:var(--primary-red)">Partage</h3>
+                        <p>Une bibliothèque numérique de ressources et protocoles médicaux pour tous nos membres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="section-padding container text-center">
+        <h2 class="fw-bold">Contactez-nous</h2>
+        <div class="title-line"></div>
+        <p>Email: <strong>contact@nursera.club</strong></p>
+        <p>Suivez-nous pour ne rien rater de nos activités !</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2026 NURSERA Club - Conçu avec passion pour les soins.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
